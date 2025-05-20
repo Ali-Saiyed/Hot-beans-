@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans Web - Apply Now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Application Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trainee_profiles.html">Trainee Profiles</a></li>
+                <li><a href="job_listings.html">Job Listings</a></li>
+                <li><a href="application.html">Apply Now</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Introduction Section -->
+        <section>
+            <h2>Join Our Team</h2>
+            <p>We’re excited that you’re interested in becoming part of Hot Beans Web! Complete the form below to apply for one of our open roles or training programs. We look forward to reviewing your application.</p>
+        </section>
+
+        <!-- Application Form -->
+        <section>
+            <h2>Application Form</h2>
+            <form action="submit_application.php" method="POST">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="position">Position Applied For:</label>
+                    <select id="position" name="position" required>
+                        <option value="frontend">Front-End Developer</option>
+                        <option value="backend">Back-End Developer</option>
+                        <option value="intern">Web Development Intern</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Why Should We Hire You?</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div>
+                    <label for="resume">Upload Your Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div>
+                    <button type="submit">Submit Application</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Tips for Applicants Section -->
+        <section>
+            <h2>Tips for a Successful Application</h2>
+            <ul>
+                <li><strong>Tailor Your Resume:</strong> Highlight your skills and achievements relevant to the role you're applying for.</li>
+                <li><strong>Showcase Your Passion:</strong> Use the "Why Should We Hire You?" section to express your enthusiasm and career goals.</li>
+                <li><strong>Be Professional:</strong> Ensure your application is free of spelling and grammar errors.</li>
+                <li><strong>Follow Up:</strong> After submitting your application, feel free to reach out to check the status.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section>
+            <h2>Need Help?</h2>
+            <p>If you have any questions about the application process, don’t hesitate to reach out to us:</p>
+            <p>Email: <a href="mailto:careers@hotbeansweb.com">careers@hotbeansweb.com</a></p>
+            <p>Phone: +44 123 456 7890</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hot Beans Web. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
